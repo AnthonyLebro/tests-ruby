@@ -1,3 +1,5 @@
-def sec #formule de convertion trouvée en ligne
+def time_string(sec) #formule de convertion trouvée en ligne
+
     Time.at(sec).utc.strftime("%H:%M:%S")
+
 end
