@@ -4,14 +4,14 @@ def echo (x)
 
 end
 
-def shout (x)
+def shout (x) #methode qui retourne le Majuscule
 
     return x.upcase
 
 end
 
 
-def repeat (x, y = 2)
+def repeat (x, y = 2) #méthode qui permet de répéter
 
     space = " "
     if y == 2
@@ -23,7 +23,7 @@ def repeat (x, y = 2)
     end
 end
 
-def start_of_word(x ,y)
+def start_of_word(x ,y) # Retourne la premiere lettre d'un mot
 
     c = []
     n = 0
@@ -45,7 +45,7 @@ def first_word (x)
 end
 
 
-def titleize(x)
+def titleize(x) # Met la premiere lettre de chaque mots en majuscule. excépté les mots a 3 lettres
     x.capitalize.split.map {|item| item.size>3 ? item.capitalize : item}.join(" ")
 end
 
